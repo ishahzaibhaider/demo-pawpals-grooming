@@ -4,112 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paw Pals Mobile Grooming | Orlando | We Come To You</title>
-<style>
-  :root{--blue:#2a6f97;--sky:#eaf4fb;--pink:#f78da7;--dark:#1d3557;--txt:#2b2b2b;--mut:#6b7a8d}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Trebuchet MS',Verdana,sans-serif;color:var(--txt);background:#fff;line-height:1.6}
-  header{position:sticky;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);z-index:10}
-  nav{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
-  .logo{font-size:1.25rem;font-weight:bold;color:var(--blue)}
-  nav a{color:var(--dark);text-decoration:none;margin-left:20px;font-size:.95rem}
-  nav a:hover{color:var(--blue)}
-  .hero{background:linear-gradient(160deg,var(--sky),#fff 70%);padding:80px 24px 60px}
-  .hero-inner{max-width:1080px;margin:auto;text-align:center}
-  .hero h1{font-size:clamp(2rem,5.5vw,3.4rem);color:var(--dark)}
-  .hero h1 em{color:var(--blue);font-style:normal}
-  .hero p{color:var(--mut);max-width:540px;margin:16px auto 28px;font-size:1.1rem}
-  .btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 34px;border-radius:40px;text-decoration:none;font-weight:bold;border:none;font-size:1rem;cursor:pointer}
-  .btn:hover{background:#1d557a}
-  .badges{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
-  .badge{background:#fff;border:1px solid #d8e6f2;border-radius:30px;padding:8px 18px;font-size:.88rem;color:var(--dark)}
-  section{max-width:1080px;margin:auto;padding:64px 24px}
-  h2{color:var(--dark);font-size:1.9rem;margin-bottom:8px}
-  .sub{color:var(--mut);margin-bottom:36px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-  .card{background:#fff;border:1px solid #e3edf5;border-radius:16px;padding:26px;box-shadow:0 4px 14px rgba(29,53,87,.05)}
-  .card .ico{font-size:2rem}
-  .card h3{color:var(--blue);margin:10px 0 8px}
-  .card p{color:var(--mut);font-size:.95rem}
-  .price{font-size:1.3rem;color:var(--dark);font-weight:bold;margin-top:12px}
-  .areas{display:flex;flex-wrap:wrap;gap:10px}
-  .area{background:var(--sky);color:var(--dark);border-radius:30px;padding:8px 18px;font-size:.9rem}
-  form{background:#fff;border:1px solid #e3edf5;border-radius:16px;padding:32px;max-width:620px;margin:auto;box-shadow:0 8px 24px rgba(29,53,87,.08)}
-  label{display:block;margin:14px 0 6px;font-size:.88rem;color:var(--dark);font-weight:bold}
-  input,select,textarea{width:100%;border:1px solid #cfdeeb;border-radius:8px;padding:11px;font-size:1rem;background:#fbfdff}
-  input:focus,select:focus,textarea:focus{outline:2px solid var(--blue)}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  @media(max-width:560px){.row{grid-template-columns:1fr}}
-  .note{font-size:.84rem;color:var(--mut);margin-top:12px}
-  .ok{display:none;background:#e9f9f0;border:1px solid #79d2a3;color:#1e7a4b;padding:14px;border-radius:8px;margin-top:16px;text-align:center}
-  footer{background:var(--dark);color:#bcd0e5;text-align:center;padding:30px;font-size:.85rem}
-</style>
+<meta name="description" content="Mobile dog grooming across Greater Orlando by Alex and Zindy. Book online, pay a deposit, get reminders.">
+<meta property="og:title" content="Paw Pals Mobile Grooming | Orlando | We Come To You">
+<meta property="og:description" content="Mobile dog grooming across Greater Orlando by Alex and Zindy. Book online, pay a deposit, get reminders.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐾%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <nav>
-    <div class="logo">🐾 Paw Pals Mobile Grooming</div>
-    <div><a href="#services">Services</a><a href="#areas">Areas</a><a href="#book">Book</a></div>
+    <a class="logo" href="#top">🐾 PAW PALS</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#work">Real Work</a>
+      <a href="#how">How It Works</a>
+      <a class="cta" href="#book">Book A Groom</a>
+    </div>
   </nav>
 </header>
 
-<div class="hero">
-  <div class="hero-inner">
-    <h1>Spa Day For Your Dog, <em>Right In Your Driveway</em></h1>
-    <p>Fully equipped grooming trailer serving Greater Orlando. One on one care from Alex and Zindy, no cages, no waiting rooms, no stressed pups.</p>
-    <a class="btn" href="#book">Book A Groom</a>
-    <div class="badges">
-      <span class="badge">🚿 Full grooming trailer</span>
-      <span class="badge">💗 One dog at a time</span>
-      <span class="badge">📍 We come to you</span>
-      <span class="badge">🔔 Text reminders</span>
-    </div>
-  </div>
+<div class="hero" id="top">
+  <span class="eyebrow">Orlando · Mobile · One Dog At A Time</span>
+  <h1>Spa Day For Your Dog, <em>Right In Your Driveway</em></h1>
+  <p>Fully equipped grooming trailer serving Greater Orlando. One on one care from Alex and Zindy, no cages, no waiting rooms, no stressed pups.</p>
+  <a class="btn" href="#book">Book A Groom</a>
+  <a class="btn ghost" href="#work">See Real Work</a>
+  <div class="badges"><span class="badge">🚿 Full grooming trailer</span><span class="badge">💗 One dog at a time</span><span class="badge">📍 We come to you</span><span class="badge">🔔 Text reminders</span></div>
 </div>
 
 <section id="services">
-  <h2>Services and Pricing</h2>
-  <p class="sub">Prices by size, so you know the number before we knock.</p>
-  <div class="grid">
-    <div class="card"><div class="ico">🐕</div><h3>Bath and Tidy</h3><p>Bath, blow dry, brush out, nail trim, ear cleaning, light trim.</p><div class="price">Small from $65 · Large from $90</div></div>
-    <div class="card"><div class="ico">✂️</div><h3>Full Groom</h3><p>Everything in Bath and Tidy plus a full haircut styled to your pup.</p><div class="price">Small from $95 · Large from $130</div></div>
-    <div class="card"><div class="ico">✨</div><h3>Add Ons</h3><p>De-shedding, teeth brushing, paw balm, flea treatment, blueberry facial.</p><div class="price">From $10 each</div></div>
+  <div class="container">
+    <h2 class="reveal">Services and Pricing</h2>
+    <p class="sub reveal">Prices by size, so you know the number before we knock.</p>
+    <div class="grid"><div class="card reveal"><div class="ico">🐕</div><h3>Bath and Tidy</h3><p>Bath, blow dry, brush out, nail trim, ear cleaning, light trim.</p><div class="price">Small from $65 · Large from $90</div></div><div class="card reveal"><div class="ico">✂️</div><h3>Full Groom</h3><p>Everything in Bath and Tidy plus a full haircut styled to your pup.</p><div class="price">Small from $95 · Large from $130</div></div><div class="card reveal"><div class="ico">✨</div><h3>Add Ons</h3><p>De-shedding, teeth brushing, paw balm, flea treatment, blueberry facial.</p><div class="price">From $10 each</div></div></div>
   </div>
 </section>
 
-<section id="areas">
-  <h2>Where We Roll</h2>
-  <p class="sub">Pick your area when you book, we route our week around you.</p>
-  <div class="areas">
-    <span class="area">Lake Buena Vista</span><span class="area">Apopka</span><span class="area">Maitland</span><span class="area">Winter Park</span><span class="area">Celebration</span><span class="area">St. Cloud</span><span class="area">Orlando</span>
+<section id="work" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Real Work, Straight From Instagram</h2>
+    <p class="sub reveal">Fresh cuts, happy pups and the trailer in action, posted by Paw Pals.</p>
+    <div class="iggrid"><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/p/DGQxt0wRPZ1/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/reel/DZfajsrxdjT/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/reel/DZaE1SBRfja/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/reel/DZSmKhTx1hb/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/reel/DZNU5J3Rfqy/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/alexthegroomer/reel/DZIFOtixeGm/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div></div>
+    <p class="ig-note">Live posts from <a href="https://www.instagram.com/alexthegroomer/" target="_blank" rel="noopener">@alexthegroomer</a>, always up to date.</p>
   </div>
 </section>
 
-<section id="book">
-  <h2 style="text-align:center">Book Your Pup In</h2>
-  <p class="sub" style="text-align:center">Two minutes, done. No DM tennis.</p>
-  <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';this.reset()">
-    <div class="row">
-      <div><label>Your name</label><input type="text" required></div>
-      <div><label>Phone</label><input type="tel" required></div>
-    </div>
-    <div class="row">
-      <div><label>Dog's name</label><input type="text" required></div>
-      <div><label>Size</label><select><option>Small, under 25 lb</option><option>Medium, 25 to 50 lb</option><option>Large, 50 lb plus</option></select></div>
-    </div>
-    <div class="row">
-      <div><label>Service</label><select><option>Bath and Tidy</option><option>Full Groom</option><option>Not sure, advise me</option></select></div>
-      <div><label>Area</label><select><option>Lake Buena Vista</option><option>Apopka</option><option>Maitland</option><option>Winter Park</option><option>Celebration</option><option>St. Cloud</option><option>Orlando</option></select></div>
-    </div>
-    <label>Preferred date</label><input type="date">
-    <label>Anything we should know</label><textarea rows="3" placeholder="Matted coat, nervous around dryers, gate code, parking notes"></textarea>
-    <div style="text-align:center;margin-top:24px"><button class="btn" type="submit">Request My Spot</button></div>
-    <p class="note">A small deposit confirms your slot and is credited to your groom. You get a text confirmation and a reminder the day before.</p>
-    <div class="ok">Request received! Alex will confirm your slot and send a deposit link shortly. 🐾</div>
-  </form>
+<section id="how">
+  <div class="container">
+    <h2 class="reveal">How It Works</h2>
+    <p class="sub reveal">Book in two minutes. We route our week around you.</p>
+    <div class="steps"><div class="step reveal"><b>Pick area and slot</b><p>Choose your neighborhood, service and dog size in the form below.</p></div><div class="step reveal"><b>Confirm with a deposit</b><p>A small deposit locks your slot and is credited to your groom.</p></div><div class="step reveal"><b>We pull up</b><p>Text reminder the day before, then a spa day in your driveway.</p></div></div>
+  </div>
+</section>
+
+<section id="book" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Book Your Pup In</h2>
+    <p class="sub reveal">Serving Lake Buena Vista, Apopka, Maitland, Winter Park, Celebration, St. Cloud and Orlando.</p>
+    <form id="bookform" novalidate>
+      <div class="row2"><div><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Your name" required></div><div><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(407) 555 0123" required></div></div><div class="row2"><div><label for="dog">Dog's name</label><input type="text" id="dog" name="dog" placeholder="Bella" required></div><div><label for="size">Size</label><select id="size" name="size"><option>Small, under 25 lb</option><option>Medium, 25 to 50 lb</option><option>Large, 50 lb plus</option></select></div></div><div class="row2"><div><label for="service">Service</label><select id="service" name="service"><option>Bath and Tidy</option><option>Full Groom</option><option>Not sure, advise me</option></select></div><div><label for="area">Area</label><select id="area" name="area"><option>Lake Buena Vista</option><option>Apopka</option><option>Maitland</option><option>Winter Park</option><option>Celebration</option><option>St. Cloud</option><option>Orlando</option></select></div></div><div><label for="date">Preferred date</label><input type="date" id="date" name="date" placeholder=""></div><div><label for="notes">Anything we should know</label><textarea id="notes" name="notes" rows="3" placeholder="Matted coat, nervous around dryers, gate code, parking notes"></textarea></div>
+      <div style="text-align:center;margin-top:26px"><button class="btn" type="submit">Request My Spot</button></div>
+      <p class="formerr">Please fill in the highlighted fields.</p>
+      <p class="note">A small deposit confirms your slot and is credited to your groom. You get a text confirmation and a reminder the day before.</p>
+      <div class="ok">Request received! Alex will confirm your slot and send a deposit link shortly. 🐾</div>
+    </form>
+  </div>
 </section>
 
 <footer>
-  Paw Pals Mobile Dog Grooming · Orlando FL · Demo preview built for Alex · Design concept, not the live business site
+  <p class="fsoc"><a href="https://www.instagram.com/alexthegroomer/" target="_blank" rel="noopener">Instagram @alexthegroomer</a></p>
+  <p>Paw Pals Mobile Dog Grooming · Orlando FL</p>
+  <p>&copy; <span id="year"></span> Paw Pals Mobile Grooming. Demo preview, a design concept and not the live business site.</p>
 </footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
